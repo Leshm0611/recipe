@@ -1,0 +1,177 @@
+<!DOCTYPE.html>
+
+<head>
+
+<meta charset="UTF-8" />
+
+
+<title></title>
+
+ <link rel="stylesheet" href="../CSS/top.css" />
+
+</head>
+
+<body background="../IMG/背景画像.png">
+
+          <div class="sitename">
+            <h3>～ O que vou comer ～</h3>
+            <h2>～ 何を食べようかな ～</h2>
+            <h5>動物性食品不使用、卵・乳製品不使用【レシピ集サイト】</h5>
+            <br>
+            <h3>🍃 おりべいら食堂 🍃</h3>
+<br>
+          </div><br><br><br>
+<br><br>
+<center>
+          <div class="descricao">
+            このサイトは自分のメモ用として作ったのでとてもシンプルな作りになっています。<br>献立を探して作り方まですぐにいけるようになっています。<br>様々な理由で動物性食品や乳製品を使用しないレシピを作ってみたい方、Veganの方、<br>自分や誰かの為に毎日献立を考えてていつもと違うものを作ってみたい方、<br>何かアイディアが欲しいなと思う方などのお役に立てれば嬉しいなと思います。
+　　　　  </div>
+</cetenr>
+
+          
+      <p>(メモ)「材料から献立を検索する」を検索欄に入れたい</p>
+          <div class="sagasu">
+            <script async src="https://cse.google.com/cse.js?cx=014656119652176855793:6emtr9yphx3"></script>
+　　　　　　<div class="gcse-search"></div>
+          </div><br><br>
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>レシピサイトトップ画面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #FCFCFC; /* ページ全体の背景の色 */
+        }
+
+        .search-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .search-container input {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .search-container button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #333;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background-color: #555;
+        }
+        .results-container {
+            margin-top: 20px;
+        }
+        .recipe-link {
+            display: block;
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #333;
+        }
+        .recipe-link:hover {
+            background-color: #f7f7f7;
+        }
+    </style>
+</head>
+<body>
+    <h1>レシピサイトトップ画面</h1>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="食材名を入力">
+        <button onclick="searchRecipes()">検索</button>
+    </div>
+    <div class="results-container" id="resultsContainer"></div>
+
+    <script>
+        const recipes = [
+            { name: "レシピ1", ingredients: ["パン", "ハム", "チーズ"], url: "renkonbooru.html" },
+            { name: "レシピ2", ingredients: ["れんこん", "マヨネーズ", "ハム"], url: "recipe2.html" },
+            { name: "レシピ3", ingredients: ["小麦粉", "れんこん"], url: "recipe3.html" },
+            // 他のレシピも追加してください
+        ];
+
+        function searchRecipes() {
+            const input = document.getElementById("searchInput").value.toLowerCase();
+            const resultsContainer = document.getElementById("resultsContainer");
+            resultsContainer.innerHTML = "";
+
+            const filteredRecipes = recipes.filter(recipe =>
+                recipe.ingredients.some(ingredient => ingredient.toLowerCase().includes(input))
+            );
+
+            if (filteredRecipes.length > 0) {
+                filteredRecipes.forEach(recipe => {
+                    const link = document.createElement("a");
+                    link.href = recipe.url;
+                    link.className = "recipe-link";
+                    link.textContent = recipe.name;
+                    resultsContainer.appendChild(link);
+                });
+            } else {
+                resultsContainer.textContent = "該当するレシピが見つかりませんでした。";
+            }
+        }
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+
+
+
+<a href="javascript:history.back()">[戻る]</a>
+<a href="javascript:history.go(-1)">[戻る]</a><br><br>
+
+<select onchange="location.href=this.options[this.selectedIndex].value">
+  <option value="#">材料からレシピを探す
+  <option value="../MENU/okazutop/okazu/renkonbooru.html">Yahoo
+  <option value="http://www.google.co.jp/">Google
+  <option value="http://www.infoseek.co.jp/">Infoseek
+</select>
+
+
+<br><br>
+
+
+</body>
+
+</html>
